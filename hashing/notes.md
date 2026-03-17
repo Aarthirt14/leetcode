@@ -87,4 +87,45 @@ This reduces time complexity to O(n).
 Key takeaway
 
 When a problem asks for finding pairs that satisfy a condition, hashing can help store previously seen values for quick lookup.
+## Group Anagrams – Learning Notes
+Initial thought
+
+Compare every string with every other string to check if they are anagrams.
+
+This results in O(n²) comparisons.
+
+Improvement
+
+Use hashing to group strings with the same character pattern.
+
+Correct approach
+
+For each string:
+
+Sort the characters.
+
+Use the sorted string as a key in a dictionary.
+
+Append the original word to that key’s list.
+
+Example:
+
+eat → aet
+tea → aet
+tan → ant
+
+Dictionary:
+
+{
+"aet": ["eat", "tea"],
+"ant": ["tan"]
+}
+Why hashing works
+
+Strings with the same sorted representation belong to the same group.
+
+Key takeaway
+
+When grouping elements based on similar patterns, hashing with a dictionary is very effective.
+
 
