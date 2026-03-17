@@ -128,4 +128,46 @@ Key takeaway
 
 When grouping elements based on similar patterns, hashing with a dictionary is very effective.
 
+## Top K Frequent Elements – Learning Notes
+Initial thought
+
+Count the frequency of each number manually and then sort them.
+
+Sorting all elements may be inefficient.
+
+Improvement
+
+Use a hash map to count frequencies first.
+
+Correct approach
+
+Use a dictionary to store frequency counts.
+
+num_count[num] += 1
+
+Extract the top k elements based on frequency.
+
+Example:
+
+nums = [1,1,1,2,2,3]
+k = 2
+
+Frequency map:
+
+{
+1:3,
+2:2,
+3:1
+}
+
+Result:
+
+[1,2]
+Why hashing works
+
+Quickly counts occurrences in O(n) time.
+
+Key takeaway
+
+When a problem involves frequency counting, hashing with a dictionary is the best pattern.
 
