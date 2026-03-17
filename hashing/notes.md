@@ -33,3 +33,58 @@ Why hashing works:
 Key takeaway:
 - When a problem involves matching frequencies of elements,
   hashing with a dictionary is the correct pattern
+
+  ## Two Sum – Learning Notes
+Initial thought
+
+Check every pair of numbers to see if they add up to the target
+
+This requires two loops → O(n²) time complexity
+
+Improvement
+
+Use a hash map (dictionary) to store numbers and their indices while iterating.
+
+Correct approach
+
+Traverse the array once.
+
+For each number, calculate the complement:
+
+𝑐
+𝑜
+𝑚
+𝑝
+𝑙
+𝑒
+𝑚
+𝑒
+𝑛
+𝑡
+=
+𝑡
+𝑎
+𝑟
+𝑔
+𝑒
+𝑡
+−
+𝑛
+𝑢
+𝑚
+complement=target−num
+
+Check if the complement already exists in the hash map.
+
+If yes → return the indices.
+
+Why hashing works
+
+Hash maps allow O(1) lookup for complements.
+
+This reduces time complexity to O(n).
+
+Key takeaway
+
+When a problem asks for finding pairs that satisfy a condition, hashing can help store previously seen values for quick lookup.
+
