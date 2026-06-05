@@ -1,0 +1,57 @@
+Problem:
+
+Input:
+
+123456
+3
+9
+
+Output:
+
+129456
+Core Idea
+
+Convert number to string and replace.
+
+Pattern
+
+String Manipulation
+
+Template
+num = input()
+old = input()
+new = input()
+
+print(num.replace(old, new))
+Key Learning
+
+Strings are often easier than mathematical digit extraction.
+
+5. enumerate()
+
+You asked about enumerate().
+
+Purpose
+
+Gives both:
+
+index
+value
+Example
+nums = [10, 20, 30]
+
+for i, num in enumerate(nums):
+    print(i, num)
+
+Output
+
+0 10
+1 20
+2 30
+Pattern
+
+Used heavily in:
+
+Two Sum
+Array problems
+Traversal questions
