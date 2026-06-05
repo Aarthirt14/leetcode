@@ -1,1 +1,37 @@
+Problem:
 
+nums = [12,345,2,6,7896]
+
+Output:
+
+2
+Core Idea
+
+Count how many numbers have even digit length.
+
+Pattern
+
+Digit Manipulation
+
+Approaches
+String Method
+count = 0
+
+for num in nums:
+    if len(str(num)) % 2 == 0:
+        count += 1
+Mathematical Method
+digits = len(str(num))
+
+or
+
+while num > 0:
+    digits += 1
+    num //= 10
+Time Complexity
+
+O(n)
+
+Key Learning
+
+Convert to string when readability matters.
